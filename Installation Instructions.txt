@@ -1,0 +1,18 @@
+Project Requirements:
+    - Get Subscription in Google cloud Platform
+    - Signup in qwicklabs
+    - username: smukeshwar1999@gmail.com
+    - password: mainproject
+    - Search for build and secure networks in google cloud
+    - Start the cloud lab and Open Google console
+    - Copy the id and password and login into Google cloud
+    - Go to Api & Services --> Credentials  --> Create Credentials --> Service account
+    - Give any information
+    - Project Ownership --> Owner
+    - Skip all the other things
+    - Choose the Name of the Account Created
+    - Go to Keys --> Add key --> New Key --> JSON --> Download the keys
+    - Paste the credentials in source code to connect
+    - Search for Create bucket in Google Cloud Search
+    - Give necessary information
+    - Copy the name and use it in source code
