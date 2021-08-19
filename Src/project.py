@@ -9,19 +9,10 @@ from xlwt import Workbook
 import time
 import pysrt
 import xlrd
-#import io
 import os
-#import moviepy.editor as mp
-#from io import BytesIO
-#import pandas as pd
 from google.cloud import storage
 import shlex
 import ntpath
-
-#obj="qwiklabs-gcp-01-f66c30ebf85c-280e8b65a963.json"
-#buck_name="audio-speech-to-text128"
-#credentials = service_account.Credentials.from_service_account_file(obj)
-#storage_client=storage.Client.from_service_account_json(obj)
 
 def source(source_input):
     source_language={
@@ -115,7 +106,6 @@ def subtitle_gen(gcs_uri,language,to_language,video_filename,output_filename):
         if isinstance(input1,six.binary_type):
             input1=input1.decode("utf-8")
         result = translate_client.translate(input1, target_language=to_language)
-      #  print(result['translatedText'],start_time,end_time)
         sheet1.write(row, column, index)
         index+=1
         column+=1
